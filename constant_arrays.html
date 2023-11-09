@@ -7,8 +7,8 @@
 </head>
 <body>
     <!-- constant variable are variable that can not be change but can be changed on an array -->
-
-    
+<h1>Array of variable then display using JS</h1>
+    <p id="display"></p>
 
     <script>
         // declare and define and Array
@@ -17,7 +17,11 @@
         // change the array variable and assign new one using indexes
         cars[1] = "Suzuki";
         console.log(cars);
-        // this will dsplay inthe console not the DOM2
+        // this will dsplay inthe console not the DOM
+
+        
+        document.getElementById("display").innerHTML = cars;
+        document.getElementById('display').style.color = "red";
     </script>
 </body>
 </html>
