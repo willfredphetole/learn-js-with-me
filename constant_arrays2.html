@@ -9,9 +9,11 @@
     <h1>Declaring a constant object does NOT make the objects properties unchangeable:</h1>
 
 <p id="display"></p>
+<p id="date"></p>
 
     <script>
         const cars = {type: "fiat", model: "Vx", color:"red", size:"250m", weight:"2500kg"};
+        const date = new Date();
 
         cars.color = "green";
         cars.model = "Sedan";
@@ -20,6 +22,8 @@
         document.getElementById("display").innerHTML = cars.owner + " " + cars.color +  " " + cars.weight;
         document.getElementById("display").style.color = "green";
         document.getElementById("display").style.fontWeight = "bold";
+
+        document.getElementById("date").innerHTML = date;
         console.log(cars);
     </script>
 </body>
