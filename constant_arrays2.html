@@ -8,9 +8,19 @@
 <body>
     <h1>Declaring a constant object does NOT make the objects properties unchangeable:</h1>
 
+<p id="display"></p>
 
     <script>
-        const cars = {type: "fiat", model: "Vx", color:"red", size:"250m", weight:"2500kg"}
+        const cars = {type: "fiat", model: "Vx", color:"red", size:"250m", weight:"2500kg"};
+
+        cars.color = "green";
+        cars.model = "Sedan";
+        cars.owner = "willy";
+
+        document.getElementById("display").innerHTML = cars.owner + " " + cars.color +  " " + cars.weight;
+        document.getElementById("display").style.color = "green";
+        document.getElementById("display").style.fontWeight = "bold";
+        console.log(cars);
     </script>
 </body>
 </html>
