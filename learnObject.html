@@ -6,6 +6,18 @@
     <title>Learn Objectss</title>
 </head>
 <body>
-    
+    <h1>creating objects with JS</h1>
+
+    <p id="obs"></p>
+    <script>
+        const person = {
+            firstName: "Willy",
+            lastName: "Mbombi",
+            idNumber: "9x10175685089",
+            dob: "199x 17 October",
+            placeOfBirth: "Limpopo"
+        }
+        document.getElementById("obs").innerHTML = person.firstName + person.dob;
+    </script>
 </body>
 </html>
