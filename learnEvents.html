@@ -8,8 +8,17 @@
 <body>
     <h1>learn Events with me</h1>
 
-    <script>
-        
-    </script>
+<button onclick="document.getElementById('dateHere').innerHTML = Date()">time is here</button>
+<button onclick="this.innerHTML= Date()">Date is here</button>
+<button onclick="displayDate()" id="displaydate">Click here to display time</button>
+
+
+<p id="dateHere"></p>
+<script>
+    function displayDate(){
+        document.getElementById("displaydate").innerHTML = Date();
+    }
+</script>
+
 </body>
 </html>
