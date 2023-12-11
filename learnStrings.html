@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JS strings</title>
+</head>
+<body>
+    <h1>Learn strings</h1>
+
+    <p id="viewdata"></p>
+    <p id="stringviewdata"></p>
+
+    <script>
+        let text = "ABCDEFGHIJKLMNOPQRSTUVXYZ";
+        let length = text.length;
+
+        document.getElementById("viewdata").innerHTML = length;
+
+        function displayStringLenght(){
+            let stringlength = "QWERTYUIOPKJHGFDSZXCVBNM";
+            let sLength = stringlength.length;
+            return sLength;      
+        }
+        document.getElementById("stringviewdata").innerHTML = displayStringLenght();
+    </script>
+</body>
+</html>
